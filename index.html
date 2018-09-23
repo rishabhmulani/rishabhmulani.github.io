@@ -90,6 +90,16 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
+			<script>
+			function openCity(cityName) {
+			    var i;
+			    var x = document.getElementsByClassName("city");
+			    for (i = 0; i < x.length; i++) {
+			       x[i].style.display = "none";  
+			    }
+			    document.getElementById(cityName).style.display = "block";  
+			}
+</script>
 
 	</body>
 </html>
