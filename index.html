@@ -13,9 +13,6 @@
 	<body class="is-loading">
 		
 			<div class="w3-sidebar w3-bar-block" style="width:15%">
-				<a href="#" class="w3-bar-item w3-button">About</a>
-  				<a href="#" class="w3-bar-item w3-button">Projects</a>
-  				<a href="#" class="w3-bar-item w3-button">Activities & Affiliations</a>
 				<button class="w3-bar-item w3-button" onclick="openCity('About')">About</button>
 				<button class="w3-bar-item w3-button" onclick="openCity('Projects')">Projects</button>
 				<button class="w3-bar-item w3-button" onclick="openCity('Activities')">Activities & Affiliations</button>
@@ -33,7 +30,7 @@
 								<img src = 'rishabhmulani.github.io/images/rm_2.jpg' style="width:100px;height:110px;">
 								<br><br>Hi! I am Rishabh Mulani!<br><br>
 								</h1>
-									<h2>Welcome to my website!<br></h2>
+									<h3>Welcome to my website (Still under construction)!<br></h3>
 								<p>
 
 								I'm a Graduate Student in Information Management at the University of Illinois, Urbana-Champaign.
@@ -73,22 +70,22 @@
 			</div>
 
 
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-			<script>
-			function openCity(cityName) {
-			    var i;
-			    var x = document.getElementsByClassName("city");
-			    for (i = 0; i < x.length; i++) {
-			       x[i].style.display = "none";  
-			    }
-			    document.getElementById(cityName).style.display = "block";  
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 			}
-</script>
+		</script>
+		<script>
+		function openCity(cityName) {
+		    var i;
+		    var x = document.getElementsByClassName("city");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    document.getElementById(cityName).style.display = "block";  
+		}
+		</script>
 
 	</body>
 </html>
