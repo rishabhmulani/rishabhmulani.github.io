@@ -9,17 +9,18 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:15%">
+				<button class="w3-bar-item w3-button" onclick="openCity('About')">About</button>
+				<button class="w3-bar-item w3-button" onclick="openCity('Projects')">Projects</button>
+				<button class="w3-bar-item w3-button" onclick="openCity('Activities')">Activities & Affiliations</button>
+		</div>
 	</head>
 	<body class="is-loading">
 
-			<!div id="wrapper">
+			<div id="wrapper">
 				<section id="main">
 						<header>
-							<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:15%">
-									<button class="w3-bar-item w3-button" onclick="openCity('About')">About</button>
-									<button class="w3-bar-item w3-button" onclick="openCity('Projects')">Projects</button>
-									<button class="w3-bar-item w3-button" onclick="openCity('Activities')">Activities & Affiliations</button>
-							</div>
 							<div id="About" class="w3-container w3-display-container city">
 								<h1>
 								<img src = 'rishabhmulani.github.io/images/rm_2.jpg' style="width:100px;height:110px;">
@@ -55,7 +56,7 @@
 								</p>
 							</ul>
 						</footer>
-				<!/div>
+				</div>
 				</section>
 				<footer id="footer">
 							Copyright © 2018 Rishabh Mulani. All Rights Reserved
