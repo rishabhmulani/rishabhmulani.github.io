@@ -438,6 +438,7 @@ background-size: 100%;
 		min-height: 100%;
 		padding: 1.5em;
 		z-index: 2;
+		width:100px
 	}
 
 		#wrapper > * {
