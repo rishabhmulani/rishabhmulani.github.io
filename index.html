@@ -1,34 +1,31 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Rishabh Mulani's website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<body>
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body>
-				
-		<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:15%">
-				<button class="w3-bar-item w3-button" onclick="openCity('Home')">Home</button>
-				<button class="w3-bar-item w3-button" onclick="openCity('Projects')">Projects</button>
-				<button class="w3-bar-item w3-button" onclick="openCity('Activities')">Activities & Affiliations</button>
-		</div>
-		<div id="wrapper">
-			<section id="main">
-					<header>
-						<div id="Home" class="w3-container w3-display-container city">
-							<h1>
-							<img src = 'rishabhmulani.github.io/images/rm_2.jpg' style="width:100px;height:110px;">
-							<br><br>Hi! I am Rishabh Mulani!<br><br>
-							</h1>
-								<h3>Welcome to my website (Still under construction)!<br></h3>
-							<p>
+<div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px">
+  <h5 class="w3-bar-item">Menu</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Home')">Home</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Projects')">Projects</button>
+</div>
 
-							I'm a Graduate Student in Information Management at the University of Illinois, Urbana-Champaign.
+<div style="margin-left:130px">
+  <div class="w3-padding"><!Use any of the w3-animate-classes to fade, zoom or slide in tab content.></div>
+
+  <div id="Home" class="w3-container city w3-animate-opacity" style="display:block">
+	<div id="wrapper">
+
+		<section id="main">
+		    <h1>Hi! I'm Rishabh Mulani</h1>
+
+<img src = 'rishabhmulani.github.io/images/rm_2.jpg' style="width:100px;height:110px;">
+
+			    <h2>Welcome to my website!</h2>
+    <p>I'm a Graduate Student in Information Management at the University of Illinois, Urbana-Champaign.
 							<br> I'm currently looking for full time opportunities linked to Data Anlaytics and Data Science.<br>My 
 							aim is to be a successful data-driven solutions engineer who understands real-world requirements<br> and
 							solves problems through consultative approaches using technology.
@@ -36,47 +33,49 @@
 
 							<br> Please feel free to reach out to me using the links below if<br> you found something interesting 
 							and would like to get in touch!
-							Thanks for stopping by!
+							Thanks for stopping by!</p>
+<p>Here's a link to my resume:<br>
+								<a href="Resume_Rishabh_Mulani.pdf" target="_blank">
+									<img src = 'https://rishabhmulani.github.io/images/res_img.PNG' style="width:50px;height:70px;">
 
-							</p>
-						</div>
-					</header>
 
-					<footer>
-						<ul class="icons">
+	</section>
+	</div>
+  </div>
+
+  <div id="Projects" class="w3-container city w3-animate-opacity" style="display:none">
+    <h2>Slide in from left</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+  </div>
+<footer id="footer">
+
+<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/rishabh-mulani" class="fa fa-linkedin">LinkedIn</a></li>
 							<li><a href="https://github.com/rishabhmulani" class="fa fa-github">Github</a></li>
 							<li><a href="mailto:rishabh.mulani@gmail.com" class="fa fa-envelope">Email</a></li>
-							<li><a href="https://www.facebook.com/rishabh.mulani" class="fa fa-facebook">Facebook</a></li>
-							<p>Here's a link to my resume:<br>
-								<a href="Resume_Rishabh_Mulani.pdf" target="_blank">
-									<img src = 'rishabhmulani.github.io/images/res_img.PNG' style="width:50px;height:70px;">
-								</a>
+							<li><a href="https://www.facebook.com/rishabh.mulani" class="fa fa-facebook">Facebook</a></li>													</a>
 							</p>
 						</ul>
-					</footer>
-				</div>
-				</section>
-				<footer id="footer">
-							Copyright Â© 2018 Rishabh Mulani. All Rights Reserved
+								Copyright © 2018 Rishabh Mulani. All Rights Reserved
 				</footer>
-			</div>
-		<script>
-			if ('addEventListener' in window) {
-				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-			}
-		</script>
-		<script>
-		function openCity(cityName) {
-		    var i;
-		    var x = document.getElementsByClassName("city");
-		    for (i = 0; i < x.length; i++) {
-		       x[i].style.display = "none";  
-		    }
-		    document.getElementById(cityName).style.display = "block";  
-		}
-		</script>
+</div>
 
-	</body>
+<script>
+function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-light-blue", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-light-blue";
+}
+</script>
+
+</body>
 </html>
