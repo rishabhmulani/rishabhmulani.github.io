@@ -79,10 +79,10 @@
 	body {
 		height: 100%;
 		background-color: #ffffff;
-		background-image: url("images/bg.jpg"), -moz-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/bg.jpg"), -webkit-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/bg.jpg"), -ms-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/bg.jpg"), linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/bg.jpg"), -moz-linear-gradient(60deg, rgba(255,255,243, 0.4) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/bg.jpg"), -webkit-linear-gradient(60deg, rgba(255,255,243, 0.4) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/bg.jpg"), -ms-linear-gradient(60deg, rgba(255,255,243, 0.4) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/bg.jpg"), linear-gradient(60deg, rgba(255,255,243, 0.4) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
 background-size: 100%;
 		background-position: top left,		center center,		bottom center;
 		background-attachment: fixed,			fixed,				fixed;
