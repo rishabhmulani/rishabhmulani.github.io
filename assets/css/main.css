@@ -414,11 +414,11 @@ background-size: 100%;
 /* Wrapper */
 
 	#wrapper {
-		width:150px
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		width:120px
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
