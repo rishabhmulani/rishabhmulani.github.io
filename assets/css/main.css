@@ -79,12 +79,11 @@
 	body {
 		height: 100%;
 		background-color: #ffffff;
-		background-image: url("images/bg.png"), -moz-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/bg.png"), -webkit-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/bg.png"), -ms-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/bg.png"), linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
-		background-repeat: repeat,			no-repeat,			no-repeat;
-		background-size: 100px 100px, cover,		cover;
+		background-image: url("images/bg.jpg"), -moz-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/bg.jpg"), -webkit-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/bg.jpg"), -ms-linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/bg.jpg"), linear-gradient(60deg, rgba(255,255,243, 0.5) 5%, rgba(0, 57, 115, 0.35)), url("../../images/bg.jpg");
+background-size: 100%;
 		background-position: top left,		center center,		bottom center;
 		background-attachment: fixed,			fixed,				fixed;
 	}
@@ -406,7 +405,7 @@
 		align-self: flex-end;
 		width: 100%;
 		padding: 1.5em 0 0 0;
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(0, 0, 0, 0.75);
 		cursor: default;
 		text-align: center;
 
